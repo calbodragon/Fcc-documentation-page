@@ -1,0 +1,117 @@
+body {
+    min-width: 290px;
+    color: #17181a;
+    background-color: rgba(254,254,254,1);
+    background: -moz-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 18%, rgba(161,156,161,1) 69%, rgba(226,226,226,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(254,254,254,1)), color-stop(18%, rgba(209,209,209,1)), color-stop(69%, rgba(161,156,161,1)), color-stop(100%, rgba(226,226,226,1)));
+    background: -webkit-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 18%, rgba(161,156,161,1) 69%, rgba(226,226,226,1) 100%);
+    background: -o-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 18%, rgba(161,156,161,1) 69%, rgba(226,226,226,1) 100%);
+    background: -ms-linear-gradient(left, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 18%, rgba(161,156,161,1) 69%, rgba(226,226,226,1) 100%);
+    background: linear-gradient(to right, rgba(254,254,254,1) 0%, rgba(209,209,209,1) 18%, rgba(161,156,161,1) 69%, rgba(226,226,226,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=1 );;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  #navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color:rgba(76,76,76,1);;
+  }
+  
+  header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+  }
+  
+  #main-doc header {
+    text-align: left;
+    margin: 0px;
+  }
+  
+ 
+  
+  
+  #navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #193adf;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+  }
+  
+  
+  section li {
+    margin: 15px 0px 0px 20px;
+  }
+  
+  code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f6f8f2;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  @media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      border: 1px solid;
+      height: 208px;
+    }
+  
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
